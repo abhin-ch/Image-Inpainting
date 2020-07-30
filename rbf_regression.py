@@ -1,24 +1,3 @@
-"""
-CSCC11 - Introduction to Machine Learning, Winter 2020, Assignment 1
-B. Chan, S. Wei, D. Fleet
-
-===========================================================
-
- COMPLETE THIS TEXT BOX:
-
- Student Name: Abhinav  Chaudhary 
- Student number: 1002707733
- UtorID: chaud349   
-
- I hereby certify that the work contained here is my own
-
-
- Abhinav Chaudhary 
- (sign with your name)
-
-===========================================================
-"""
-
 import numpy as np
 import _pickle as pickle
 import matplotlib.pyplot as plt
@@ -79,12 +58,6 @@ class RBFRegression():
         Given a single scalar input x,
         f(x) = w_0 + w_1 * b_0(x) + w_2 * b_1(x) + ... + w_K * b_K(x), 
         where b_i is the i'th radial basis function.
-
-        TODO: You will need to implement the above function and handle multiple 2D inputs,
-              formatted as a Nx2 matrix.
-        
-        NOTE: You must not iterate through inputs.
-        HINT: You can use self._rbf_2d to compute b_i(X).
         
         Args:
         - X (ndarray (Shape: (N, 2))): A Nx2 matrix consisting N 2D input data.
@@ -112,11 +85,6 @@ class RBFRegression():
 
         Recall that the optimal parameters are:
         parameters = (X^{T}X)^{-1}X^{T}Y
-
-        TODO: You will need to replace self.parameters to the optimal parameters. Remember that the shape
-              of the self.parameters is (K + 1, 1), where the first entry is the bias
-
-        NOTE: Do not forget that we are using radial basis functions!
 
         Args:
         - train_X (ndarray (shape: (N, 2))): A Nx2 matrix consisting N 2D training inputs.
